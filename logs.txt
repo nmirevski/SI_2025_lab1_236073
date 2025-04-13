@@ -1,0 +1,15 @@
+*   edd24f6 Resolve merge conflicts
+|\  
+| * ee981f3 Implement markCategoryCompleted
+* |   122450f Merge pull request #11 from nmirevski/8-mark-a-task-as-completed-by-name
+|\ \  
+| * | e5a6cc5 Implement markTaskCompleted
+| |/  
+* |   f7a8f68 Merge pull request #10 from nmirevski/3-list-tasks-sorted-by-name
+|\ \  
+| |/  
+|/|   
+| * 93d279b Implement sortTasksByName
+|/  
+* 05bd7ae Add starter code
+* 9dbf62e Initial commit

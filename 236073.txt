@@ -1,0 +1,156 @@
+Komandi koristeni vo procesot:
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git init
+Initialized empty Git repository in /Users/ninomirevski/Documents/Finki/SI_2025_lab1_236073/.git/
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git remote add origin https://github.com/nmirevski/SI_2025_lab1_236073.git
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % nano README.md
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add README.md
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Initial commit"
+[main (root-commit) 9dbf62e] Initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % nano SI2025Lab1Main.java
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add SI2025Lab1Main.java
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Add starter code"
+[main 05bd7ae] Add starter code
+ 1 file changed, 126 insertions(+)
+ create mode 100644 SI2025Lab1Main.java
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/nmirevski/SI_2025_lab1_236073.git'
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git branch
+* main
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push -u origin main  
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.40 KiB | 1.40 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nmirevski/SI_2025_lab1_236073.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git branch
+* main
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git fetch origin
+From https://github.com/nmirevski/SI_2025_lab1_236073
+ * [new branch]      3-list-tasks-sorted-by-name        -> origin/3-list-tasks-sorted-by-name
+ * [new branch]      8-mark-a-task-as-completed-by-name -> origin/8-mark-a-task-as-completed-by-name
+ * [new branch]      9-mark-all-tasks-in-a-category-as-completed -> origin/9-mark-all-tasks-in-a-category-as-completed
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git checkout 3-list-tasks-sorted-by-name 
+branch '3-list-tasks-sorted-by-name' set up to track 'origin/3-list-tasks-sorted-by-name'.
+Switched to a new branch '3-list-tasks-sorted-by-name'
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % nano SI2025Lab1Main.java 
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add SI2025Lab1Main.java 
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Implement sortTasksByName"
+[3-list-tasks-sorted-by-name 93d279b] Implement sortTasksByName
+ 1 file changed, 1 insertion(+)
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 379 bytes | 379.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nmirevski/SI_2025_lab1_236073.git
+   05bd7ae..93d279b  3-list-tasks-sorted-by-name -> 3-list-tasks-sorted-by-name
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git checkout
+Your branch is up to date with 'origin/3-list-tasks-sorted-by-name'.
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git checkout 8-mark-a-task-as-completed-by-name
+branch '8-mark-a-task-as-completed-by-name' set up to track 'origin/8-mark-a-task-as-completed-by-name'.
+Switched to a new branch '8-mark-a-task-as-completed-by-name'
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % nano SI2025Lab1Main.java
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add SI2025Lab1Main.java 
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Implement markTaskCompleted"
+[8-mark-a-task-as-completed-by-name e5a6cc5] Implement markTaskCompleted
+ 1 file changed, 6 insertions(+)
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 421 bytes | 421.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nmirevski/SI_2025_lab1_236073.git
+   05bd7ae..e5a6cc5  8-mark-a-task-as-completed-by-name -> 8-mark-a-task-as-completed-by-name
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git checkout 9-mark-all-tasks-in-a-category-as-completed
+branch '9-mark-all-tasks-in-a-category-as-completed' set up to track 'origin/9-mark-all-tasks-in-a-category-as-completed'.
+Switched to a new branch '9-mark-all-tasks-in-a-category-as-completed'
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % nano SI2025Lab1Main.java
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add SI2025Lab1Main.java 
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Implement markCategoryCompleted"
+[9-mark-all-tasks-in-a-category-as-completed ee981f3] Implement markCategoryCompleted
+ 1 file changed, 5 insertions(+)
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push                                                
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 412 bytes | 412.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nmirevski/SI_2025_lab1_236073.git
+   05bd7ae..ee981f3  9-mark-all-tasks-in-a-category-as-completed -> 9-mark-all-tasks-in-a-category-as-completed
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git pull origin master
+fatal: couldn't find remote ref master
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git pull origin main  
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.97 KiB | 404.00 KiB/s, done.
+From https://github.com/nmirevski/SI_2025_lab1_236073
+ * branch            main       -> FETCH_HEAD
+   05bd7ae..122450f  main       -> origin/main
+Updating 05bd7ae..122450f
+Fast-forward
+ SI2025Lab1Main.java | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git merge 9-mark-all-tasks-in-a-category-as-completed
+Auto-merging SI2025Lab1Main.java
+hint: Waiting for your editor to close the file... 
+zsh: suspended  git merge 9-mark-all-tasks-in-a-category-as-completed
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git merge 9-mark-all-tasks-in-a-category-as-completed
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	modified:   SI2025Lab1Main.java
+
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git add .
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git commit -m "Resolve merge conflicts"
+[main edd24f6] Resolve merge conflicts
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git merge --abort
+fatal: There is no merge to abort (MERGE_HEAD missing).
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git merge 9-mark-all-tasks-in-a-category-as-completed
+
+Already up to date.
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git push origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 459 bytes | 459.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nmirevski/SI_2025_lab1_236073.git
+   122450f..edd24f6  main -> main
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % git log --oneline --graph --all > logs.txt
+
+ninomirevski@Ninos-MacBook-Pro SI_2025_lab1_236073 % touch 236073.txt
